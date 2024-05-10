@@ -20,15 +20,17 @@
 </script>
 
 <div>
-  
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
   <form class="column" on:submit|preventDefault={greet}>
     <input id="greet-input" placeholder="Enter a name..." bind:value={name} />
     <br>
     
     <input id="greet-input" placeholder="Enter a dir..." bind:value={save_dir} />
-    <button  on:click={choose_dir}>choose your directory</button>
+    <button class="btn"  on:click={choose_dir}>choose your directory</button>
     <br>
-    <button type="submit"> </button>
+    <button class="btn" type="submit"> </button>
   </form>
   <p>{greetMsg}</p>
 </div>
